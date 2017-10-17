@@ -97,6 +97,17 @@ disable it in the Playlist.
 (Note that the split icon above is not available for the Playlist entries 
 with the non-default start/end time).
 
+### Add a list of YouTube URLs
+
+Sometimes you bookmark multiple YouTube videos and later want to add all of them to a playlist.
+In this case you may piggyback the same text area that was used to split tracklist above ( <img src="img/split-tracklist-icon.png"> ),
+but instead of the tracklist paste a list of YouTube URL (one URL per line):
+<pre>
+https://www.youtube.com/watch?v=6DrwYurnoPQ
+https://www.youtube.com/watch?v=aUj2vdLt4JI
+https://www.youtube.com/watch?v=jpv2tMJJuz0
+</pre>
+
 ### Batch renaming 
 
 In addition to the manual editing of the track names in the Playlist you may also use DiskYT
