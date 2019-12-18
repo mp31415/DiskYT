@@ -22,18 +22,18 @@ function run(disks) {
 	if (disks.length !== 1) {
 		return disks;
 	}
-	
+
 	let disk0 = disks[0];
-	
+
 	let newDisks = [];
-	
+
 	let diskMisc = {
 		name: "Misc",
 		songs: []
 	};
-	
+
 	let nameToDisk = {"Misc": diskMisc};
-	
+
 	// create a new disk for each year from the playlist
 	disk0.songs.forEach(function(song) {
 		let date = new Date(song.publishedAt);
@@ -41,7 +41,7 @@ function run(disks) {
 		if (isNaN(date)) {
 			diskName = "Misc";
 		} else {
-			diskName = date.getFullYear();
+			diskName = date.getFullYear().toString();
 		}
 		let disk = nameToDisk[diskName];
 		if (!disk) {
@@ -54,11 +54,11 @@ function run(disks) {
 		}
 		disk.songs.push(song);
 	});
-		
+
 	// sort disks by name	
-	newDisks.sort(sortByName);
-		
+	newDisks.sort();
+
 	return newDisks;
 }
 
-return run(disks);
+return run(disks); 
